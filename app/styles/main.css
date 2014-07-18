@@ -5,3 +5,25 @@ body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   background-color: white;
 }
+
+.fly.ng-enter {
+  transition: 200ms ease-in all;
+  opacity: 0;
+}
+
+.fly.ng-enter-stagger {
+  transition-delay: 200ms;
+}
+
+.fly.ng-enter-active {
+  opacity: 1;
+}
+
+.fly.ng-leave {
+  transition: 200ms ease-out all 30ms;
+  opacity: 1;
+}
+
+.fly.ng-leave-active {
+  opacity: 0;
+}

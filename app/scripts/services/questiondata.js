@@ -25,11 +25,9 @@ angular.module('faqApp').service('questionData', function ($http) {
         return result;
       });
 
-      questions = _.sortBy(questions, function (question) {
+      return _.sortBy(questions, function (question) {
         return question.category + question.title;
       });
-
-      return _.groupBy(questions, 'category');
     });
   };
 });

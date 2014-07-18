@@ -20,7 +20,11 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header>
-      <h1>Hoodie FAQs</h1>
+      <h1>
+        <a href="/">
+          Hoodie FAQs
+        </a>
+      </h1>
     </header>
     <ui-view></ui-view>
     <footer>
@@ -44,12 +48,15 @@
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/lodash/dist/lodash.compat.js"></script>
     <!-- endbower -->
+    <script src="bower_components/marked/lib/marked.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/services/questiondata.js"></script>
+    <script src="scripts/controllers/question.js"></script>
+    <script src="scripts/services/categorydata.js"></script>
     <!-- endbuild -->
 </body>
 </html>

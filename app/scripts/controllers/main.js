@@ -1,8 +1,8 @@
-angular.module('faqApp').controller('MainCtrl', function ($scope, questionData) {
+angular.module('faqApp').controller('MainCtrl', function ($scope, categoryData) {
   'use strict';
   $scope.categories = [];
 
-  questionData().then(function(data) {
+  categoryData().then(function(data) {
     $scope.categories = data;
   });
 });
