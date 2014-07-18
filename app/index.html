@@ -19,17 +19,21 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header>
-      <h1>
-        <a href="/">
-          Hoodie FAQs
-        </a>
-      </h1>
-    </header>
-    <ui-view></ui-view>
-    <footer>
-      <a href="https://github.com/hoodiehq/faq/issues/new">Ask a question</a>
-    </footer>
+    <main>
+      <header>
+        <h1>
+          <a href="/">
+            <img id="logo" src="images/hoodie_logo.png" alt="The Hoodie Logo">
+            Frequently Asked Questions
+          </a>
+        </h1>
+      </header>
+      <ui-view></ui-view>
+      <footer>
+        <a href="https://github.com/hoodiehq/faq/issues/new">Ask a question</a>
+        <a href="http://thehoodiefirm.com/impressum.html">Impressum</a>
+      </footer>
+    </main>
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
