@@ -11,7 +11,8 @@ angular.module('faqApp').service('questionData', function ($http) {
           id: question.id,
           url: question.html_url,
           title: question.title,
-          answer: question.body
+          answer: question.body,
+          updated: new Date(question.updated_at)
         };
 
         var categoryPattern = /^cat\:/;

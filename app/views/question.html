@@ -1,6 +1,11 @@
 <section class="fly" ng-show="question.id">
   <h2>{{ question.title }}</h2>
   <p ng-bind-html="question.answer"></p>
+  <p ng-if="isOutDated(question)"><em>
+    This question wasn't updated in a month.
+    If in doubt visit us on <a href="http://hood.ie/irc.html">IRC</a> or ping us
+    on Twitter (<a href="http://twitter.com/hoodiehq">@hoodiqhq</a>).
+  </em></p>
   <p>
     <a ng-href="{{ question.url }}">Improve this answer</a>
   </p>
