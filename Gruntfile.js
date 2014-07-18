@@ -304,6 +304,22 @@ module.exports = function (grunt) {
         }
       },
       src: '**/*'
+    },
+
+    manifest: {
+      generate: {
+        options: {
+          basePath: '<%= yeoman.dist %>',
+          preferOnline: true,
+          verbose: false,
+        },
+        src: [
+          '**/{,*}.*',
+          '!index.html',
+          '!manifest.appcache'
+        ],
+        dest: '<%= yeoman.dist %>/manifest.appcache'
+      }
     }
   });
 
@@ -345,7 +361,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'manifest'
   ]);
 
   grunt.registerTask('default', [

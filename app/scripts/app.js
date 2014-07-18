@@ -24,4 +24,18 @@ angular.module('faqApp', [
       templateUrl: 'views/question.html',
       controller: 'QuestionCtrl'
     });
+}).run(function($q, $window) {
+  'use strict';
+
+  var defer = $q.defer();
+  var cache = $window.applicationCache;
+  cache.addEventListener('updateready', defer.resolve);
+
+  defer.promise.then(function() {
+    $window.location.reload();
+  });
+
+  if (cache.status === cache.UPDATEREADY) {
+    defer.resolve();
+  }
 });
