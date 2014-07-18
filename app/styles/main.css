@@ -101,3 +101,18 @@ section {
 footer {
   text-align: center;
 }
+
+#loading-bar .bar {
+  background: #302182;
+}
+
+#loading-bar .peg {
+  box-shadow: #302182 1px 0 6px 1px;
+}
+
+/*
+#loading-bar-spinner .spinner-icon {
+  border-top-color:  #302182;
+  border-left-color: #302182;
+}
+*/

@@ -3,9 +3,12 @@ angular.module('faqApp', [
   'ngResource',
   'ngSanitize',
   'ngTouch',
-  'ui.router'
-]).config(function($urlRouterProvider, $stateProvider) {
+  'ui.router',
+  'angular-loading-bar'
+]).config(function($urlRouterProvider, $stateProvider, cfpLoadingBarProvider) {
   'use strict';
+
+  cfpLoadingBarProvider.includeSpinner = false;
 
   $urlRouterProvider.otherwise('/');
 
