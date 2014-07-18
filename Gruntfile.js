@@ -292,6 +292,18 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+
+    'gh-pages': {
+      options: {
+        base: 'dist',
+        repo: 'https://' + process.env.GH_TOKEN + '@github.com/hoodiehq/faq',
+        user: {
+          name: 'Hoodie Bot',
+          email: 'stephan@thehoodiefirm.com'
+        }
+      },
+      src: '**/*'
     }
   });
 
@@ -341,4 +353,6 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('ci', ['default', 'gh-pages']);
 };
