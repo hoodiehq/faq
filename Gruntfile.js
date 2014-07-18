@@ -249,6 +249,7 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>',
           dest: '<%= yeoman.dist %>',
           src: [
+            'CNAME',
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
