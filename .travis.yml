@@ -4,6 +4,8 @@ node_js:
 before_script:
 - npm install -g bower grunt-cli
 - bower install
+notifications:
+  email: false
 script:
 - grunt ci
 env:
