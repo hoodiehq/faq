@@ -1,1 +1,12 @@
-<h1>Hoodie FAQs</h1>
+<input type="search" ng-model="searchTerm" placeholder="Search">
+
+<div ng-repeat="category in categories">
+  <h2>{{ category[0].category }}</h2>
+  <ul ng-repeat="question in category | filter:searchTerm track by question.id">
+    <li>
+      <a ui-sref="question({id: question.id})">
+        {{ question.title }}
+      </a>
+    </li>
+  </ul>
+</div>
