@@ -250,6 +250,7 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>',
           src: [
             'CNAME',
+            'favicons/*',
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
