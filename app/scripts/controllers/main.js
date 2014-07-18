@@ -1,8 +1,8 @@
-angular.module('faqApp').controller('MainCtrl', function ($scope) {
+angular.module('faqApp').controller('MainCtrl', function ($scope, questionData) {
   'use strict';
-  $scope.awesomeThings = [
-    'HTML5 Boilerplate',
-    'AngularJS',
-    'Karma'
-  ];
+  $scope.questions = [];
+
+  questionData().then(function(data) {
+    console.log(data);
+  });
 });
