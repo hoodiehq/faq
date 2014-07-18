@@ -4,7 +4,8 @@ angular.module('faqApp', [
   'ngSanitize',
   'ngTouch',
   'ui.router',
-  'angular-loading-bar'
+  'angular-loading-bar',
+  'ngStorage'
 ]).config(function($urlRouterProvider, $stateProvider, cfpLoadingBarProvider) {
   'use strict';
 
