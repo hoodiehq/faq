@@ -16,6 +16,10 @@ module.exports = function(config) {
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/angular-touch/angular-touch.js',
       'bower_components/angular-ui-router/release/angular-ui-router.js',
+      'bower_components/lodash/dist/lodash.compat.js',
+      'bower_components/angular-loading-bar/src/loading-bar.js',
+      'bower_components/ngstorage/ngStorage.js',
+      'bower_components/marked/lib/marked.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
       'test/spec/**/*.js'
