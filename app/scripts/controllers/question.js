@@ -18,7 +18,7 @@ angular.module('faqApp').controller('QuestionCtrl', function ($scope, $state, $s
       return question.id+'' === $state.params.id+'';
     });
 
-    question.answer = $sanitize(marked(question.answer));
+    question.answer = $sanitize(question.answer);
 
     $scope.question = question;
   });

@@ -12,7 +12,6 @@
     "normalize.css": "~3.0.1",
     "angular-ui-router": "~0.2.10",
     "lodash": "~2.4.1",
-    "marked": "~0.3.2",
     "angular-loading-bar": "~0.4.3",
     "ngstorage": "~0.3.0"
   },

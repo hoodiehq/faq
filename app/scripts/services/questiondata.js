@@ -1,8 +1,15 @@
 angular.module('faqApp').service('questionData', function ($http, $q, $localStorage) {
   'use strict';
 
-  var fresh = $http.get('https://api.github.com/repos/hoodiehq/faq/issues?state=all&labels=answered', {
-    cache: true
+  var fresh = $http.get('https://api.github.com/repos/hoodiehq/faq/issues', {
+    cache: true,
+    headers: {
+      'Accept': 'application/vnd.github.v3.html+json'
+    },
+    params: {
+      state: 'all',
+      labels: 'answered'
+    }
   });
 
   var promise = $localStorage.rawResponse ? $q.when($localStorage.rawResponse) : fresh;
@@ -19,7 +26,7 @@ angular.module('faqApp').service('questionData', function ($http, $q, $localStor
           id: question.id,
           url: question.html_url,
           title: question.title,
-          answer: question.body,
+          answer: question.body_html,
           updated: new Date(question.updated_at || question.created_at)
         };
 
