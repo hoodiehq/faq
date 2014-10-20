@@ -631,8 +631,21 @@ img {
 
 /*# sourceMappingURL=hoodie.css.map */
 
+
+main{
+  position: relative;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 #content{
   padding-top: 11.75em;
+  padding-bottom: 18.75rem;
 }
 
 #content > h1{
@@ -736,28 +749,6 @@ code, kbd, pre, samp {
   opacity: 0;
 }
 
-.question.ng-enter {
-  transition: 250ms ease-in all;
-  opacity: 0;
-}
-
-.question.ng-enter-stagger {
-  transition-delay: 250ms;
-}
-
-.question.ng-enter-active {
-  opacity: 1;
-}
-
-.question.ng-leave {
-  transition: 250ms ease-out all 30ms;
-  opacity: 1;
-}
-
-.question.ng-leave-active {
-  opacity: 0;
-}
-
 .question ul {
   margin: 1em 0;
 }
@@ -768,14 +759,28 @@ code, kbd, pre, samp {
 
 footer {
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer .inner {
+  position: relative;
+  margin-top: -9em;
+}
+
+footer a:last-child{
+  border-left: 1px solid #302182;
+  padding-left: 0.25em;
 }
 
 #loading-bar .bar {
-  background: #302182;
+  background: #FFF;
 }
 
 #loading-bar .peg {
-  box-shadow: #302182 1px 0 6px 1px;
+  box-shadow: #FFF 1px 0 6px 1px;
 }
 
 /*
