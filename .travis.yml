@@ -10,4 +10,4 @@ script:
 - grunt ci
 env:
   global:
-    secure: DUYaOhjLwG9tctXzQHOMIYWMrL0RRaDUrcU0QW4TRt4gQj0jBlGPcbbAWNZv3OyXXGcecNz7AE3Zkyqzlk/Cp3ZuFGKkro0oazOBrCEyM5di2+7mETWeMA5mKEn2bGYSljPuWvTV8KHIIWNKLnrnNETGcgCJ3diiSlJtZMPr3LE=
+  - secure: TwDaYnvCKwRqiqlRpKXTTsR7z+YxTLL3Ls16QHQVuwRkIHJk2MUce7Y6ZtMU/OizSciqZ8YWMl12UovpyxERPfmLpWYPb3V2ud/9zCIDfujgm6XExO8vrZW3kkhW97Qmtpf+OcFFkgARzr2A9Piw3Dzew/LUNMemg7JCxGvYfuw=
