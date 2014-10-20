@@ -26,18 +26,42 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="faqApp">
+  <body ng-app="faqApp" class="blue">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <main>
       <header>
-        <h1>
-          <a href="/">
-            <img id="logo" src="images/hoodie_logo.png" alt="The Hoodie Logo">
-            Frequently Asked Questions
-          </a>
-        </h1>
+        <section id="nav">
+          <div id="logo"><img src="../img/logo.svg" width="135" alt=""></div>
+          <nav id="main-nav" aria-role="navigation">
+            <a href="#" class="active">Intro</a>
+            <a href="#">Contribute</a>
+            <a href="#">Get help</a>
+            <a href="#">about</a>
+            <a href="#">community</a>
+            <a href="#">zoo</a>
+            <a href="#">contact</a>
+          </nav>
+          <ul id="meta-nav">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">try</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </section>
+        <section class="hide">
+          <ul id="sub-nav">
+            <li><a href="#">Team</a></li>
+            <li><a href="#">wear hoodie</a></li>
+            <li><a href="#">give money</a></li>
+            <li><a href="#" class="active">hire us</a></li>
+            <li><a href="#">contributors</a></li>
+            <li><a href="#">friends</a></li>
+            <li><a href="#">initiatives</a></li>
+            <li><a href="#">tools</a></li>
+          </ul>
+        </section>
       </header>
       <ui-view></ui-view>
       <footer>

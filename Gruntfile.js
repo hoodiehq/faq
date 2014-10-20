@@ -142,7 +142,7 @@ module.exports = function (grunt) {
 
     wiredep: {
       options: {
-        cwd: '<%= yeoman.app %>'
+        cwd: ''
       },
       app: {
         src: ['<%= yeoman.app %>/index.html'],
