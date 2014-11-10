@@ -11,3 +11,7 @@ script:
 env:
   global:
   - secure: TwDaYnvCKwRqiqlRpKXTTsR7z+YxTLL3Ls16QHQVuwRkIHJk2MUce7Y6ZtMU/OizSciqZ8YWMl12UovpyxERPfmLpWYPb3V2ud/9zCIDfujgm6XExO8vrZW3kkhW97Qmtpf+OcFFkgARzr2A9Piw3Dzew/LUNMemg7JCxGvYfuw=
+cache:
+  directories:
+  - node_modules
+sudo: false
