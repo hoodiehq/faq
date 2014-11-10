@@ -681,20 +681,21 @@ header{
 }
 
 input#search {
-  font-size: 1.75rem;
+  border: 1px solid #312783;
+  padding: 0.25em 0.5em 0.1em;
   width: 80%;
   margin: 0 10%;
-  padding: 0.35em 0.5em 0.2em;
-  border: 5px solid #312783;
-  border-radius: 10px;
+  font-size: 16px;
+  color: #312783;
+  transition: all 0.25s;
   text-transform: uppercase;
-  transition: background-color 0.25s, color 0.1s;
 }
 
-input#search:focus{
-  outline:none;
-  color: #FFF;
+input#search:focus,
+input#search:hover{;
   background-color: #312783;
+  color: #FFF;
+  outline: none;
 }
 
 code, kbd, pre, samp {
