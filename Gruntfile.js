@@ -370,6 +370,4 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
-
-  grunt.registerTask('ci', ['default', 'gh-pages']);
 };
