@@ -1,5 +1,18 @@
-<!doctype html>
-<html class="no-js" manifest="manifest.appcache">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<!--
+ /$$                                 /$$ /$$
+| $$                                | $$|__/
+| $$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$$ /$$  /$$$$$$
+| $$__  $$ /$$__  $$ /$$__  $$ /$$__  $$| $$ /$$__  $$
+| $$  \ $$| $$  \ $$| $$  \ $$| $$  | $$| $$| $$$$$$$$
+| $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$| $$_____/
+| $$  | $$|  $$$$$$/|  $$$$$$/|  $$$$$$$| $$|  $$$$$$$
+|__/  |__/ \______/  \______/  \_______/|__/ \_______/
+
+We <3 the people who are involved in this project,
+and we’d love to have you on board: http://hood.ie/contribute
+-->
   <head>
     <meta charset="utf-8">
     <title>Hoodie - Frequently Asked Questions</title>
@@ -24,81 +37,108 @@
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+
     <link rel="stylesheet" href="bower_components/angular-loading-bar/src/loading-bar.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/hoodie.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="faqApp" class="blue">
+  <body ng-app="faqApp" class="faq blue">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <main>
       <header>
-        <section id="nav">
-          <div id="logo"><a href="http://hood.ie"><img src="images/logo.svg" width="135" alt="The Hoodie Logo takes you to Hoodie's Website"></a></div>
-          <nav id="main-nav" aria-role="navigation">
-            <a href="http://hood.ie/intro" class="active">Intro</a>
-            <a href="http://hood.ie/contribute">Contribute</a>
-            <a href="http://hood.ie/get-help">Get help</a>
-            <a href="http://hood.ie/about">About</a>
-            <a href="http://hood.ie/community">Community</a>
-            <a href="http://hood.ie/animals">Animals</a>
-            <a href="http://hood.ie/contact">Contact</a>
-          </nav>
-          <ul id="meta-nav">
-            <li><a href="http://hood.ie/blog">Blog</a></li>
-            <li><a href="http://faq.hood.ie">FAQ</a></li>
-          </ul>
+        <section class="nav">
+            <a href="http://hood.ie" class="logo"><img src="img/logo.svg" width="135" alt=""></a>
+            <nav class="main-nav">
+                <a href="http://hood.ie/intro">Intro</a>
+                <a href="http://hood.ie/contribute">Contribute</a>
+                <a href="http://hood.ie/get-help">Get help</a>
+                <a href="http://hood.ie/about">About</a>
+                <a href="http://hood.ie/community">Community</a>
+                <a href="http://hood.ie/animals">Animals</a>
+                <a href="http://hood.ie/contact">Contact</a>
+            </nav>
+            <ul class="meta-nav">
+                <li class="meta-nav-list-item"><a href="http://hood.ie/blog/" target="_blank">Blog</a></li>
+                <li class="meta-nav-list-item"><a href="/" class="">Docs</a></li>
+                <!-- <li><a href="#">try</a></li> -->
+                <li class="meta-nav-list-item"><a href="http://faq.hood.ie" target="_blank">FAQ</a></li>
+            </ul>
+            <a href="#" class="menu-button">
+                <span class="menu-button-span"></span>
+            </a>
         </section>
-        <section class="hid">
-          <ul id="sub-nav">
-            <li><a href="http://hood.ie/intro#get-started">Get started</a></li>
-            <li><a href="http://hood.ie/intro#showcases">Apps & Showcases</a></li>
-            <li><a href="http://hood.ie/bug">Report a bug</a></li>
-            <li><a href="http://hood.ie/initiatives">Initiatives</a></li>
-          </ul>
+        <section>
+            <ul class="sub-nav">
+                <li class="sub-nav-list-item">
+                    <a href="/en/">Hoodieverse</a>
+                </li>
+                <li class="sub-nav-list-item">
+                    <a href="/en/start">Let's start</a>
+                </li>
+                <li class="sub-nav-list-item">
+                    <a href="/en/tutorials">Tutorials</a>
+                </li>
+                <li class="sub-nav-list-item">
+                    <a href="/en/techdocs">API</a>
+                </li>
+                <li class="sub-nav-list-item">
+                    <a href="/en/plugins">Plugins</a>
+                </li>
+                <li class="sub-nav-list-item">
+                    <a href="/en/deployment">Deployment</a>
+                </li>
+                <li class="sub-nav-list-item">
+                    <a href="/en/community">Community</a>
+                </li>
+            </ul>
         </section>
-      </header>
-      <ui-view></ui-view>
-      <footer>
-        <div class="inner">
-          <a href="https://github.com/hoodiehq/faq/issues/new">Ask a question</a>
-          <a href="http://thehoodiefirm.com/impressum.html">Impressum</a>
-        </div>
-      </footer>
-    </main>
-    <!-- build:js(.) scripts/oldieshim.js -->
-    <!--[if lt IE 9]>
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.min.js"></script>
-    <![endif]-->
-    <!-- endbuild -->
+    </header>
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/json3/lib/json3.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="bower_components/lodash/dist/lodash.compat.js"></script>
-    <script src="bower_components/angular-loading-bar/src/loading-bar.js"></script>
-    <script src="bower_components/ngstorage/ngStorage.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+    <ui-view></ui-view>
 
-    <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/services/questiondata.js"></script>
-    <script src="scripts/controllers/question.js"></script>
-    <script src="scripts/services/categorydata.js"></script>
-    <!-- endbuild -->
+    <footer>
+      <div class="footer">
+       <section class="cb sitemap">
+        <ul class="sitemap-list l">
+          <li><a href="https://github.com/hoodiehq/faq/issues/new">Ask a question</a> | </li>
+          <li><a href="http://thehoodiefirm.com/impressum.html">Impressum</a></li>
+        </ul>
+        </section>
+      </div>
+    </footer>
+  <!-- build:js(.) scripts/oldieshim.js -->
+  <!--[if lt IE 9]>
+  <script src="bower_components/es5-shim/es5-shim.js"></script>
+  <script src="bower_components/json3/lib/json3.min.js"></script>
+  <![endif]-->
+  <!-- endbuild -->
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/json3/lib/json3.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+  <script src="bower_components/angular-loading-bar/src/loading-bar.js"></script>
+  <script src="bower_components/ngstorage/ngStorage.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/services/questiondata.js"></script>
+  <script src="scripts/controllers/question.js"></script>
+  <script src="scripts/services/categorydata.js"></script>
+  <!-- endbuild -->
 </body>
 </html>
