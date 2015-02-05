@@ -60,6 +60,11 @@
   line-height: 1.6;
 }
 
+.faq .task-list {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
 .faq .sitemap {
   text-align: center;
 }
@@ -106,26 +111,7 @@
   font-weight: 500;
   margin-top: 2em;
 }
-/*
-.blue .btn{
-  display: inline-block;
-  margin-top: 1em;
-  padding: 0.4em 1em 0.2em;
-  background-color: #312783;
-  border-radius: 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #FFF;
-  border: 5px solid #312783;
-  transition: background-color 0.25s, color 0.1s, border 0.3s;
-}
 
-.blue .btn:hover{
-  background-color: #FFF;
-  color: #312783;
-  border: 5px solid #312783;
-}
-*/
 .fly.ng-enter {
   transition: 100ms ease-in all;
   opacity: 0;
