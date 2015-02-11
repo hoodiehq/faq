@@ -255,8 +255,9 @@ module.exports = function (grunt) {
             '.htaccess',
             '*.html',
             'views/**/*.html',
-            'images/**/*.{webp}',
-            'styles/fonts/*'
+            'images/**/*.{webp,svg}',
+            'styles/fonts/*',
+            'images/font/**/*'
           ]
         }, {
           expand: true,
@@ -282,8 +283,8 @@ module.exports = function (grunt) {
       ],
       dist: [
         'copy:styles',
-        'imagemin',
-        'svgmin'
+        'imagemin'
+        // 'svgmin'
       ]
     },
 
