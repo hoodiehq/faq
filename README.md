@@ -25,4 +25,4 @@ npm start
 
 # License
 
-This app is MIT licensed. Feel free to reuse is for your own project.
+This app is MIT licensed. Feel free to reuse this for your own project.
