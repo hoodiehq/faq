@@ -22,3 +22,7 @@ Start development server
 ```bash
 npm start
 ```
+
+# License
+
+This app is MIT licensed. Feel free to reuse is for your own project.
