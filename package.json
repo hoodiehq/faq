@@ -1,6 +1,11 @@
 {
   "name": "faq",
+  "description": "Frequently asked questions about Hoodie",
   "version": "0.0.0",
+  "author": "Stephan Bönnemann <stephan@thehoodiefirm.com>",
+  "bugs": {
+    "url": "https://github.com/hoodiehq/faq/issues"
+  },
   "dependencies": {},
   "devDependencies": {
     "bower": "^1.3.12",
@@ -38,6 +43,20 @@
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "homepage": "http://faq.hood.ie/",
+  "keywords": [
+    "answers",
+    "faq",
+    "issues",
+    "no-backend",
+    "questions"
+  ],
+  "license": "MIT",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hoodiehq/faq.git"
   },
   "scripts": {
     "deploy": "grunt gh-pages",
