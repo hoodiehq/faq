@@ -1,5 +1,6 @@
 angular.module('faqApp', [
   'ngAnimate',
+  'ngAria',
   'ngResource',
   'ngSanitize',
   'ngTouch',
