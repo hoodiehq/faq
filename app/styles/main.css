@@ -19,6 +19,11 @@
   background-image: none;
 }
 
+.faq b {
+  position: absolute;
+  left: -999em;
+}
+
 .faq input#search {
   border: solid #CCC;
   border-width: 0 0 1px 0;
