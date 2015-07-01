@@ -7,7 +7,7 @@ angular.module('faqApp').controller('QuestionCtrl', function ($scope, $state, $s
     if (!question.updated) {
       return false;
     }
-    if (Date.now() - question.updated > 30 * 24 * 60 * 60 * 1e3) {
+    if (Date.now() - question.updated > 30 * 24 * 60 * 60 * 1e3 * 3) {
       return true;
     }
     return false;
