@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Time: Thu Jul 02 2015 10:43:54 GMT+0000 (UTC)
+# Time: Thu Jul 02 2015 18:52:37 GMT+0000 (UTC)
 
 CACHE:
 favicons/apple-touch-icon-114x114.png
@@ -62,7 +62,7 @@ images/logo_cut_negativ_yellow.37eed5a8.png
 images/logo_cut_yellow.dcbc20c8.png
 scripts/oldieshim.693a1bc0.js
 scripts/scripts.b0007131.js
-scripts/vendor.042f7c18.js
+scripts/vendor.4326000f.js
 styles/main.14cdc419.css
 styles/vendor.9dd12a97.css
 views/index.html
