@@ -3,11 +3,18 @@
 [![Dependency Status](https://david-dm.org/hoodiehq/faq.svg)](https://david-dm.org/hoodiehq/faq)
 [![devDependency Status](https://david-dm.org/hoodiehq/faq/dev-status.svg)](https://david-dm.org/hoodiehq/faq#info=devDependencies)
 
-This repository's issue tracker will be used to collect, discuss and finally answer frequently asked questions.
-All question that are labeled "answered" will then be extracted with the GitHub API to display them nicely on a website and make them searchable.
+## FAQ Workflow - How to display questions and answers on faq.hood.ie
 
-The issues's title will be interpreted as the actual question, while the body of the opening post will be treated as the answer.
-Resources can be collected and discussion can take place in the comments.
+First, a question must be asked! All questions are issues within the [issue tracker](https://github.com/hoodiehq/faq/issues) of this repository. A question will not show up on [faq.hood.ie](http://faq.hood.ie) until a hoodie contributor believes it has been answered correctly. When the question has been answered, a label of `answered` must be added to the GitHub issue for it to appear within the app.
+
+The FAQ app takes the issue's title and uses this as the question title on the app. The first post on the GitHub issue is assumed to be the answer. This can be problematic if the original post in the GitHub Issue is the question asked. In order to have the question and answer show up in the app, you should close the answered issue (make sure it does not have a label of `answered`) and create a new issue. 
+
+This new issue's title should be the question, and the first post should be the answer. It should also have the `answered` label and a `cat:` (category) label so it shows up in helpful categories within the app. See an example [here](https://github.com/hoodiehq/faq/issues/30). This makes sure that our FAQ provides the best information possible and everyone can get the answers they need!
+
+If a better answer comes along, the previous issue within the now incorrect answer can be closed; and a new issue can be created.
+
+Comments and resources are encouraged on each question, dicussion is good and answers may change as time passes. Only the first post will be displayed on the question, but each question comes with a link to the issue to add/view more discussions.
+
 
 ## Development
 
